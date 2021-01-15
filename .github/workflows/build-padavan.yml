@@ -85,10 +85,10 @@ jobs:
         # 以下选项是定义你需要的功能（y=集成,n=忽略），重新写入到.config文件。
         ####################################################################
         echo "CONFIG_FIRMWARE_INCLUDE_LANG_CN=y" >> configs/templates/$TNAME.config      #设置界面简体中文
-        echo "CONFIG_FIRMWARE_INCLUDE_QOS=n" >> configs/templates/$TNAME.config          #删除QOS
+        echo "CONFIG_FIRMWARE_INCLUDE_QOS=y" >> configs/templates/$TNAME.config          #删除QOS
         echo "CONFIG_FIRMWARE_INCLUDE_SMBD36=y" >> configs/templates/$TNAME.config       #使用SMBD36新版本
         echo "CONFIG_FIRMWARE_INCLUDE_DDNS_SSL=y" >> configs/templates/$TNAME.config     #删除DDNS_SSL
-        echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=n" >> configs/templates/$TNAME.config        #删除HTTPS
+        echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=y" >> configs/templates/$TNAME.config        #删除HTTPS
         echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=n" >> configs/templates/$TNAME.config      #删除OPENVPN
         echo "CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW=y" >> configs/templates/$TNAME.config   #使用FFMPEG新版本
         echo "CONFIG_FIRMWARE_INCLUDE_XUPNPD=n" >> configs/templates/$TNAME.config       #删除用于IPTV的XUPNPD
@@ -103,9 +103,9 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_MTR=n" >> configs/templates/$TNAME.config          #删除工具MTR
         echo "CONFIG_FIRMWARE_INCLUDE_IPERF3=n" >> configs/templates/$TNAME.config       #删除工具IPERF3
         echo "CONFIG_FIRMWARE_INCLUDE_NANO=y" >> configs/templates/$TNAME.config         #删除工具NANO
-        echo "CONFIG_FIRMWARE_INCLUDE_HTOP=n" >> configs/templates/$TNAME.config         #删除工具HTOP
+        echo "CONFIG_FIRMWARE_INCLUDE_HTOP=y" >> configs/templates/$TNAME.config         #删除工具HTOP
         echo "CONFIG_FIRMWARE_INCLUDE_LRZSZ=n" >> configs/templates/$TNAME.config        #删除工具LRZSZ
-        echo "CONFIG_FIRMWARE_INCLUDE_CURL=n" >> configs/templates/$TNAME.config         #删除工具CURL
+        echo "CONFIG_FIRMWARE_INCLUDE_CURL=y" >> configs/templates/$TNAME.config         #删除工具CURL
         echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=y" >> configs/templates/$TNAME.config      #删除OPENSSH
         echo "CONFIG_FIRMWARE_INCLUDE_SFTP=y" >> configs/templates/$TNAME.config         #删除SFTP
         echo "CONFIG_FIRMWARE_INCLUDE_TCPDUMP=y" >> configs/templates/$TNAME.config      #删除TCPDUMP
